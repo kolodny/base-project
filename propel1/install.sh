@@ -25,7 +25,7 @@ $files['bootstrap.php'] = <<< BOOTSTRAP_PHP
 <?php
 
 require_once __DIR__ . DIRECTORY_SEPARATOR . 'constants.php';
-require_once DIR_ROOT . '/db/propel/propel1/runtime/lib/Propel.php';
+require_once DIR_ROOT . '/db/propel/runtime/lib/Propel.php';
 Propel::init(DIR_ROOT . '/db/build/conf/$project_name-conf.php');
 set_include_path(DIR_ROOT . '/db/build/classes/' . PATH_SEPARATOR . get_include_path());
 BOOTSTRAP_PHP;
